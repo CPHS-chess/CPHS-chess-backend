@@ -24,6 +24,7 @@ const pool = new Pool({
     max: process.env.DB_POOL_MAX || 10,
     idleTimeoutMillis: process.env.DB_POOL_IDLE_TIMEOUT || 30000,
     connectionTimeoutMillis: 2000,
+    ssl:true
 });
 
 // Test database connection
